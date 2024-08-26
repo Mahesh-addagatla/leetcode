@@ -7,5 +7,6 @@ class Solution:
                     l.append(i)
                     l.append(j)
         return list(sorted(set(l)))
+#simple code to run it
 
                     
