@@ -10,6 +10,7 @@
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
+ driver code describing the node
  *     }
  * }
  */
