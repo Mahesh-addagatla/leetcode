@@ -6,6 +6,7 @@ class Solution {
             str.setCharAt(end--,ch);
         }
     }
+    //happy birthadasjkajf;iewhflyuGSF.IUGw;ifug;WIRUHFRI;uwhf;iuHR;IHwrwihv;WIjNV;WJrnfr;o
   public String reverseParentheses(String str) {
     Stack<Integer> st=new Stack<>();
     StringBuilder s=new StringBuilder();
