@@ -1,0 +1,28 @@
+class Solution {
+    public String addSpaces(String s, int[] spaces) {
+        // int j=0,i=0;
+        // int l=s.length();
+        int n=spaces.length;
+        // String str="";
+        // while(i<l){
+        //     if(j<n && i==spaces[j]){
+        //         str+=" ";
+        //         j++;
+        //     }
+        //     str+=s.charAt(i);
+        //     i++;
+        // }
+        // return str;
+        StringBuilder str = new StringBuilder();
+        int i=1;
+        str.append(s.substring(0,spaces[0]));
+        for(;i<n;i++){
+            str.append(" ");
+            str.append(s.substring(spaces[i-1],spaces[i]));
+        }
+        str.append(" ");
+        str.append(s.substring(spaces[i-1]));
+
+        return str.toString();
+    }
+}
