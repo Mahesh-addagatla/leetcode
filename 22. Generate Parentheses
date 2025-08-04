@@ -1,0 +1,17 @@
+class Solution {
+    public void f(int left,int right,String s,List<String> ans,int n){
+        if(s.length()==2*n)ans.add(s);
+
+        if(left<n){
+            f(left+1,right,s+"(",ans,n);
+        }
+        if(right<left){
+            f(left,right+1,s+")",ans,n);
+        }
+    }
+    public List<String> generateParenthesis(int n) {
+        List<String> ans = new ArrayList<>();
+        f(0,0,"",ans,n);
+        return ans;
+    }
+}
